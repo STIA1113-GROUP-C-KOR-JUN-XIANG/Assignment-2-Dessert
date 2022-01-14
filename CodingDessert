@@ -1,0 +1,152 @@
+package Dessert;
+
+import java.util.Scanner;
+
+public class dessert_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		char reply;
+		String dessert1, dessert2, dessert3, dessert4, dessert5;
+		int quantity1, quantity2, quantity3, quantity4, quantity5, numberemployee,x;
+		double price1, price2, price3, price4, price5, cost1, cost2, cost3, cost4, cost5, grossprft1, grossprft2, grossprft3, grossprft4, grossprft5, totalcostingredients, totalgrossprft, totalsalary, totalothercosts, income, employeesalary, rent, utilities, transport, totalsales;
+			System.out.print("Enter the type of the first dessert : ");
+			dessert1 = sc.nextLine();
+			System.out.print("Enter the type of the second dessert : ");
+			dessert2 = sc.nextLine();
+			System.out.print("Enter the type of the third dessert : ");
+			dessert3 = sc.nextLine();
+			System.out.print("Enter the type of the fourth dessert : ");
+			dessert4 = sc.nextLine();
+			System.out.print("Enter the type of the fifth dessert : ");
+			dessert5 = sc.nextLine();
+			System.out.print("Enter the price of the "+dessert1+" : RM");
+			price1 = sc.nextDouble();
+			System.out.print("Enter the cost of ingredients of the "+dessert1+" : RM");
+			cost1 = sc.nextDouble();
+			System.out.print("Enter the price of the "+dessert2+" : RM");
+			price2 = sc.nextDouble();
+			System.out.print("Enter the cost of ingredients of the "+dessert2+" : RM");
+			cost2 = sc.nextDouble();
+			System.out.print("Enter the price of the "+dessert3+" : RM");
+			price3 = sc.nextDouble();
+			System.out.print("Enter the cost of ingredients of the "+dessert3+" : RM");
+			cost3 = sc.nextDouble();
+			System.out.print("Enter the price of the "+dessert4+" : RM");
+			price4 = sc.nextDouble();
+			System.out.print("Enter the cost of ingredients of the "+dessert4+" : RM");
+			cost4 = sc.nextDouble();
+			System.out.print("Enter the price of the "+dessert5+" : RM");
+			price5 = sc.nextDouble();
+			System.out.print("Enter the cost of ingredients of the "+dessert5+" : RM");
+			cost5 = sc.nextDouble();
+				grossprft1 = price1-cost1; 
+				grossprft2 = price2-cost2;
+				grossprft3 = price3-cost3;
+				grossprft4 = price4-cost4;
+				grossprft5 = price5-cost5;
+			System.out.print("Enter the quantity of the "+dessert1+" sold : ");
+			quantity1 = sc.nextInt();
+			System.out.print("Enter the quantity of the "+dessert2+" sold : ");
+			quantity2 = sc.nextInt();
+			System.out.print("Enter the quantity of the "+dessert3+" sold : ");
+			quantity3 = sc.nextInt();
+			System.out.print("Enter the quantity of the "+dessert4+" sold : ");
+			quantity4 = sc.nextInt();
+			System.out.print("Enter the quantity of the "+dessert5+" sold : ");
+			quantity5 = sc.nextInt();
+				totalcostingredients = (quantity1*cost1)+(quantity2*cost2)+(quantity3*cost3)+(quantity4*cost4)+(quantity5*cost5);
+				totalgrossprft = (quantity1* grossprft1)+(quantity2* grossprft2)+( quantity3* grossprft3)+(quantity4*grossprft4)+(quantity5* grossprft5);
+				totalsales = (price1*quantity1)+(price2*quantity2)+(price3*quantity3)+(price4*quantity4)+(price5*quantity5);
+			System.out.println("Have you hired staff? (Yes or No)");
+			reply = sc.next().charAt(0);
+			if(reply=='Y'||reply=='y') {
+			System.out.print("Enter the number of employees you hired : ");
+			numberemployee = sc.nextInt();
+			System.out.print("Enter the employee salary : RM");
+			employeesalary = sc.nextDouble();
+			totalsalary = 0;
+			for(x=0 ; x<numberemployee ; x++) {
+				totalsalary += employeesalary;
+			}
+			System.out.print("Enter the rent payment per month : RM");
+			rent = sc.nextDouble();
+			System.out.print("Enter the utilities fee for this month : RM");
+			utilities = sc.nextDouble();
+			System.out.print("Enter the transport fee for this month : RM");
+			transport = sc.nextDouble();
+				totalothercosts = totalsalary+rent+utilities+transport;
+				income = totalgrossprft-totalothercosts;
+			System.out.println();
+			System.out.println("1."+dessert1+" \tPrice: RM"+price1+" \tQuantity Sold: "+quantity1+" \tCost: RM"+cost1+" \tGross Profit: RM"+grossprft1);
+			System.out.println("2."+dessert2+" \tPrice: RM"+price2+" \tQuantity Sold: "+quantity2+" \tCost: RM"+cost2+" \tGross Profit: RM"+grossprft2);
+			System.out.println("3."+dessert3+" \tPrice: RM"+price3+" \tQuantity Sold: "+quantity3+" \tCost: RM"+cost3+" \tGross Profit: RM"+grossprft3);
+			System.out.println("4."+dessert4+" \tPrice: RM"+price4+" \tQuantity Sold: "+quantity4+" \tCost: RM"+cost4+" \tGross Profit: RM"+grossprft4);
+			System.out.println("5."+dessert5+" \tPrice: RM"+price5+" \tQuantity Sold: "+quantity5+" \tCost: RM"+cost5+" \tGross Profit: RM"+grossprft5);
+			System.out.println("\t**************************************************************************");
+			System.out.println("\t TOTAL SALES    \t   = RM"+totalsales);
+			System.out.println("\t TOTAL COST OF INGREDIENTS = RM"+totalcostingredients);
+			System.out.println("\t______________________________________________");
+			System.out.println("\t TOTAL GROSS PROFIT \t   = RM"+totalgrossprft);
+			System.out.println("\t----------------------------------------------");
+			System.out.println("\t EMPLOYEE SALARY= RM"+totalsalary);
+			System.out.println("\t RENT PAYMENT \t= RM"+rent);
+			System.out.println("\t UTILITIES FEE \t= RM"+utilities);
+			System.out.println("\t TRANSPORT FEE \t= RM"+transport);
+			System.out.println("\t______________________________________________");
+			System.out.println("\t TOTAL COST \t= RM"+totalothercosts);
+			System.out.println("\t______________________________________________");
+			System.out.println("\t NET INCOME \t= RM"+income);
+			System.out.println("\t**************************************************************************");
+			if(totalgrossprft>totalothercosts) {
+				if(income>=3000) {
+					System.out.println("\"You have a decent income and can keep your business going.\"");
+				}else if(income<3000) {
+					System.out.println("\"Despite the low income, you can keep your business going.\"");
+				}
+			}else {
+					System.out.println("\"Your company is losing money, and if you continue to operate, you will face bankruptcy.\"");
+			}
+			}else if(reply=='N'||reply=='n') {
+				System.out.print("Enter the rent payment per month : RM");
+				rent = sc.nextDouble();
+				System.out.print("Enter the utilities fee for this month : RM");
+				utilities = sc.nextDouble();
+				System.out.print("Enter the transport fee for this month : RM");
+				transport = sc.nextDouble();
+					totalothercosts = rent+utilities+transport;
+					income = totalgrossprft-totalothercosts;
+				System.out.println();
+				System.out.println("1."+dessert1+" \tPrice: RM"+price1+" \tQuantity Sold: "+quantity1+" \tCost: RM"+cost1+" \tGross Profit: RM"+grossprft1);
+				System.out.println("2."+dessert2+" \tPrice: RM"+price2+" \tQuantity Sold: "+quantity2+" \tCost: RM"+cost2+" \tGross Profit: RM"+grossprft2);
+				System.out.println("3."+dessert3+" \tPrice: RM"+price3+" \tQuantity Sold: "+quantity3+" \tCost: RM"+cost3+" \tGross Profit: RM"+grossprft3);
+				System.out.println("4."+dessert4+" \tPrice: RM"+price4+" \tQuantity Sold: "+quantity4+" \tCost: RM"+cost4+" \tGross Profit: RM"+grossprft4);
+				System.out.println("5."+dessert5+" \tPrice: RM"+price5+" \tQuantity Sold: "+quantity5+" \tCost: RM"+cost5+" \tGross Profit: RM"+grossprft5);
+				System.out.println("\t**************************************************************************");
+				System.out.println("\t TOTAL SALES    \t   = RM"+totalsales);
+				System.out.println("\t TOTAL COST OF INGREDIENTS = RM"+totalcostingredients);
+				System.out.println("\t______________________________________________");
+				System.out.println("\t TOTAL GROSS PROFIT \t   = RM"+totalgrossprft);
+				System.out.println("\t----------------------------------------------");
+				System.out.println("\t RENT PAYMENT \t= RM"+rent);
+				System.out.println("\t UTILITIES FEE \t= RM"+utilities);
+				System.out.println("\t TRANSPORT FEE \t= RM"+transport);
+				System.out.println("\t______________________________________________");
+				System.out.println("\t TOTAL COST \t= RM"+totalothercosts);
+				System.out.println("\t______________________________________________");
+				System.out.println("\t NET INCOME \t= RM"+income);
+				System.out.println("\t**************************************************************************");
+				if(totalgrossprft>totalothercosts) {
+					if(income>=3000) {
+						System.out.println("\"You have a decent income and can keep your business going.\"");
+					}else if(income<3000) {
+						System.out.println("\"Despite the low income, you can keep your business going.\"");
+					}
+				}else {
+						System.out.println("\"Your company is losing money, and if you continue to operate, you will face bankruptcy.\"");
+				}
+			}sc.close();
+	}
+
+}
