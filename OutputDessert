@@ -1,0 +1,49 @@
+Enter the type of the first dessert : Chocolate
+Enter the type of the second dessert : Lemon pie
+Enter the type of the third dessert : Apple puff
+Enter the type of the fourth dessert : Macaron
+Enter the type of the fifth dessert : Ice cream
+Enter the price of the Chocolate : RM25
+Enter the cost of ingredients of the Chocolate : RM18
+Enter the price of the Lemon pie : RM16
+Enter the cost of ingredients of the Lemon pie : RM9
+Enter the price of the Apple puff : RM12
+Enter the cost of ingredients of the Apple puff : RM7
+Enter the price of the Macaron : RM25
+Enter the cost of ingredients of the Macaron : RM15
+Enter the price of the Ice cream : RM16
+Enter the cost of ingredients of the Ice cream : RM10
+Enter the quantity of the Chocolate sold : 56
+Enter the quantity of the Lemon pie sold : 98
+Enter the quantity of the Apple puff sold : 135
+Enter the quantity of the Macaron sold : 203
+Enter the quantity of the Ice cream sold : 165
+Have you hired staff? (Yes or No)
+y
+Enter the number of employees you hired : 2
+Enter the employee salary : RM1000
+Enter the rent payment per month : RM500
+Enter the utilities fee for this month : RM600
+Enter the transport fee for this month : RM350
+
+1.Chocolate 	Price: RM25.0 	Quantity Sold: 56 	Cost: RM18.0 	Gross Profit: RM7.0
+2.Lemon pie 	Price: RM16.0 	Quantity Sold: 98 	Cost: RM9.0 	Gross Profit: RM7.0
+3.Apple puff 	Price: RM12.0 	Quantity Sold: 135 	Cost: RM7.0 	Gross Profit: RM5.0
+4.Macaron 	Price: RM25.0 	Quantity Sold: 203 	Cost: RM15.0 	Gross Profit: RM10.0
+5.Ice cream 	Price: RM16.0 	Quantity Sold: 165 	Cost: RM10.0 	Gross Profit: RM6.0
+	**************************************************************************
+	 TOTAL SALES    	   = RM12303.0
+	 TOTAL COST OF INGREDIENTS = RM7530.0
+	______________________________________________
+	 TOTAL GROSS PROFIT 	   = RM4773.0
+	----------------------------------------------
+	 EMPLOYEE SALARY= RM2000.0
+	 RENT PAYMENT 	= RM500.0
+	 UTILITIES FEE 	= RM600.0
+	 TRANSPORT FEE 	= RM350.0
+	______________________________________________
+	 TOTAL COST 	= RM3450.0
+	______________________________________________
+	 NET INCOME 	= RM1323.0
+	**************************************************************************
+"Despite the low income, you can keep your business going."
